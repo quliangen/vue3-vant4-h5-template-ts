@@ -7,6 +7,7 @@ const name = projectSettings.title || 'H5-Template'; // page title
 const port = 8080; // dev port
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? projectSettings.publicPath : '/',
   parallel: false, // 未配置可能导致build后vantUI 无样式
   lintOnSave: true,
   devServer: {
