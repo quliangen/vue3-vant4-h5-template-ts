@@ -3,7 +3,7 @@
 ## 集成技术栈：
 1. vue3 + vue-router4 + vuex4
 2. vant-ui3(按需import组件)
-3. axios(0.20.0) + 示例
+3. axios(0.20.0) + 封装示例 + devServer配置示例
 4. pug
 5. less
 6. h5 px 2 viewPort
@@ -13,6 +13,9 @@
 ## Feature:
 1. h5示例页面
 2. 模板项目正确使用姿势文档（共享git仓）
+
+## 配置项目本地服务代理设置(⭐️⭐️⭐️)
++ 配置项目服务器：复制.env.development.local.demo文件并重命名为：.env.development.local，根据实际需要配置 VUE_APP_BASE_API，具体配置看.local文件内的注释说明， .local为本地文件已添加gitignore，此项必须配置否则yarn serve找不到配置文件
 
 ## Project setup
 ```
