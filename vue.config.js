@@ -17,6 +17,24 @@ module.exports = {
       warnings: true,
       errors: true,
     },
+    proxy: {
+      // 三方mock服务 easyMock 或 Rap2
+      '/mock-server': {
+        target: 'http://api.easymock.com/app/mock/22', // 三方mock服务 easyMock 或 Rap2
+        changeOrigin: true,
+        pathRewrite: {
+          '^/mock-server': '',
+        },
+      },
+      // 本地serve代理
+      '/local-server': {
+        target: process.env.VUE_APP_LOCAL_HOST,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/local-server': '',
+        },
+      },
+    },
   },
   configureWebpack: {
     // provide the app's title in webpack name field, so that
