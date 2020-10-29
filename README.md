@@ -1,5 +1,5 @@
 # vue3-vant3-h5-template-ts [![Build Status](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts.svg?branch=master)](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts)
-### 项目预览地址：https://quliangen.github.io/vue3-vant3-h5-template-ts/(h5项目请自行f12)
+### 预览地址(h5项目请自行f12)：https://quliangen.github.io/vue3-vant3-h5-template-ts/
 ## 集成技术栈：
 1. vue3 + vue-router4 + vuex4
 2. vant-ui3(按需import组件)
@@ -13,10 +13,9 @@
 
 
 ## Feature:
-1. 模板项目正确使用姿势文档（共享git仓）
-2. 集成：定制主题
-3. styleLint
-4. changLog
+1. 集成：定制主题
+2. styleLint
+3. changLog
 
 ## 配置项目本地服务代理设置(⭐️⭐️⭐️)
 + 配置项目服务器：复制.env.development.local.demo文件并重命名为：.env.development.local，根据实际需要配置 VUE_APP_BASE_API，具体配置看.local文件内的注释说明， .local为本地文件已添加gitignore，此项必须配置否则yarn serve找不到配置文件
@@ -51,3 +50,21 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## 模板项目正确使用姿势：
+
+> 说明：此方法适合中小团队，有多个相同技术栈子项目的开发场景。
+
+> 目标：利用模板项目统一管理多个子项目技术栈。
+
+> 适用： 中后台项目、H5项目
+
+> 注意：此方法适用git共享仓，模板项目可向子项目merge，子项目不可pull到模板项目污染模板。
+
+具体步骤：
+1. 先行体验并查阅本项目技术栈是否适合贵司业务及技术栈
+2. 方法:
+  + 拉取项目到本地（修改为贵司模板后）推送到私有git/gitLab仓
+  + 创建新的H5项目时，拉取贵司模板到本地，修改git remote origin源为template，添加子项目私有仓为origin，推送到子项目仓。
+  + 后续依赖包升级、基础框架升级、公共模块开发等，在模板项目中开发后，子项目中 git pull template 分支名称，可同步模板项目修改到子项目。
