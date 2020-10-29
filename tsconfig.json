@@ -9,6 +9,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors":true, // 解决object遍历时默认 item为any
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
