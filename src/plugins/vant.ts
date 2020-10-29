@@ -1,0 +1,38 @@
+// 按需引入vant
+import {
+  Button,
+  Checkbox,
+  CheckboxGroup,
+  Card,
+  SubmitBar,
+  Toast,
+  Tag,
+  Col,
+  Icon,
+  Cell,
+  CellGroup,
+  Swipe,
+  SwipeItem,
+  ActionBar,
+  ActionBarIcon,
+  ActionBarButton,
+} from 'vant';
+
+export default {
+  Button,
+  Checkbox,
+  CheckboxGroup,
+  Card,
+  SubmitBar,
+  Toast,
+  Tag,
+  Col,
+  Icon,
+  Cell,
+  CellGroup,
+  Swipe,
+  SwipeItem,
+  ActionBar,
+  ActionBarIcon,
+  ActionBarButton,
+};

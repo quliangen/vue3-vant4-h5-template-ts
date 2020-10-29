@@ -9,12 +9,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue';
+import { onMounted } from 'vue';
 import { count } from '@/store/useState/count';
 import { useRoute } from 'vue-router';
 import { login } from '@/api/index';
 
-export default defineComponent({
+export default {
   setup() {
     const route = useRoute();
     console.log('Router with Composition API demo: ', route);
@@ -35,7 +35,7 @@ export default defineComponent({
       ...count(),
     };
   },
-});
+};
 </script>
 
 <style scoped></style>

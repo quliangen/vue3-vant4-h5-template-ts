@@ -1,9 +1,10 @@
-<template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about/12345">About</router-link>
-  </div>
-  <router-view />
+<template lang="pug">
+#nav
+  router-link(to="/goods") Goods |
+  router-link(to="/cart") Cart |
+  router-link(to="/") Home |
+  router-link(to="/about/12345") About |
+  router-view
 </template>
 
 <style lang="less">
@@ -16,8 +17,7 @@
 }
 
 #nav {
-  padding: 30px;
-
+  padding: 20px;
   a {
     font-weight: bold;
     color: #2c3e50;

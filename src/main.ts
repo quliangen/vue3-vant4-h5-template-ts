@@ -2,11 +2,18 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-// 按需引入vant
-import { Button } from 'vant';
+import vant from './plugins/vant';
 
-createApp(App)
+// 创建app
+const app = createApp(App);
+
+// use vant组件
+Object.keys(vant).forEach(key => {
+  const comp = vant[key];
+  app.use(comp);
+});
+
+app
   .use(store)
   .use(router)
-  .use(Button)
   .mount('#app');
