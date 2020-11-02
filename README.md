@@ -20,9 +20,6 @@
 ## 配置项目本地服务代理设置(⭐️⭐️⭐️)
 + 配置项目服务器：复制.env.development.local.demo文件并重命名为：.env.development.local，根据实际需要配置 VUE_APP_BASE_API，具体配置看.local文件内的注释说明， .local为本地文件已添加gitignore，此项必须配置否则yarn serve找不到配置文件
 
-## 配置项目本地服务代理设置(⭐️⭐️⭐️)
-+ 配置项目服务器：复制.env.development.local.demo文件并重命名为：.env.development.local，根据实际需要配置 VUE_APP_BASE_API，具体配置看.local文件内的注释说明， .local为本地文件已添加gitignore，此项必须配置否则yarn serve找不到配置文件
-
 ## Project setup
 ```
 yarn
@@ -61,6 +58,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 > 适用： 中后台项目、H5项目
 
 > 注意：此方法适用git共享仓，模板项目可向子项目merge，子项目不可pull到模板项目污染模板。
+
+> Tips: 说了这么多此方法其实就是手动版本的github fork。
 
 具体步骤：
 1. 先行体验并查阅本项目技术栈是否适合贵司业务及技术栈
