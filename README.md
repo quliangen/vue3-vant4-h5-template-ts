@@ -59,6 +59,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 > 注意：此方法适用git共享仓，模板项目可向子项目merge，子项目不可pull到模板项目污染模板。
 
+> Tips: 说了这么多此方法其实就是手动版本的github fork。
+
 具体步骤：
 1. 先行体验并查阅本项目技术栈是否适合贵司业务及技术栈
 2. 方法:
