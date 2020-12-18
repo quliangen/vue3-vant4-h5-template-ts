@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
-    "vant": "^3.0.0-beta.6",
-    "vue": "^3.0.2",
-    "vue-router": "^4.0.0-rc.1",
-    "vuex": "^4.0.0-rc.1"
+    "vant": "^3.0.0-rc.3",
+    "vue": "^3.0.4",
+    "vue-router": "^4.0.1",
+    "vuex": "^4.0.0-rc.2"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",

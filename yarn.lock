@@ -125,6 +125,11 @@
   resolved "https://registry.npm.taobao.org/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.10.4.tgz?cache=0&sync_timestamp=1593522720715&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fhelper-validator-identifier%2Fdownload%2F%40babel%2Fhelper-validator-identifier-7.10.4.tgz#a78c7a7251e01f616512d31b10adcf52ada5e0d2"
   integrity sha1-p4x6clHgH2FlEtMbEK3PUq2l4NI=
 
+"@babel/helper-validator-identifier@^7.12.11":
+  version "7.12.11"
+  resolved "https://registry.npm.taobao.org/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.12.11.tgz#c9a1f021917dcb5ccf0d4e453e399022981fc9ed"
+  integrity sha1-yaHwIZF9y1zPDU5FPjmQIpgfye0=
+
 "@babel/helpers@^7.10.4":
   version "7.10.4"
   resolved "https://registry.npm.taobao.org/@babel/helpers/download/@babel/helpers-7.10.4.tgz#2abeb0d721aff7c0a97376b9e1f6f65d7a475044"
@@ -149,9 +154,9 @@
   integrity sha1-x/9jA99xCA7HpPW4wAPFjxz1EDc=
 
 "@babel/parser@^7.12.0":
-  version "7.12.3"
-  resolved "https://registry.npm.taobao.org/@babel/parser/download/@babel/parser-7.12.3.tgz?cache=0&sync_timestamp=1602883732179&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fparser%2Fdownload%2F%40babel%2Fparser-7.12.3.tgz#a305415ebe7a6c7023b40b5122a0662d928334cd"
-  integrity sha1-owVBXr56bHAjtAtRIqBmLZKDNM0=
+  version "7.12.11"
+  resolved "https://registry.npm.taobao.org/@babel/parser/download/@babel/parser-7.12.11.tgz?cache=0&sync_timestamp=1608076801657&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fparser%2Fdownload%2F%40babel%2Fparser-7.12.11.tgz#9ce3595bcd74bc5c466905e86c535b8b25011e79"
+  integrity sha1-nONZW810vFxGaQXobFNbiyUBHnk=
 
 "@babel/plugin-syntax-object-rest-spread@^7.0.0":
   version "7.8.3"
@@ -211,11 +216,11 @@
     to-fast-properties "^2.0.0"
 
 "@babel/types@^7.12.0":
-  version "7.12.1"
-  resolved "https://registry.npm.taobao.org/@babel/types/download/@babel/types-7.12.1.tgz?cache=0&sync_timestamp=1602799933484&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Ftypes%2Fdownload%2F%40babel%2Ftypes-7.12.1.tgz#e109d9ab99a8de735be287ee3d6a9947a190c4ae"
-  integrity sha1-4QnZq5mo3nNb4ofuPWqZR6GQxK4=
+  version "7.12.11"
+  resolved "https://registry.npm.taobao.org/@babel/types/download/@babel/types-7.12.11.tgz#a86e4d71e30a9b6ee102590446c98662589283ce"
+  integrity sha1-qG5NceMKm27hAlkERsmGYliSg84=
   dependencies:
-    "@babel/helper-validator-identifier" "^7.10.4"
+    "@babel/helper-validator-identifier" "^7.12.11"
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
@@ -449,6 +454,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
+
+"@popperjs/core@^2.5.4":
+  version "2.6.0"
+  resolved "https://registry.npm.taobao.org/@popperjs/core/download/@popperjs/core-2.6.0.tgz?cache=0&sync_timestamp=1607988479045&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40popperjs%2Fcore%2Fdownload%2F%40popperjs%2Fcore-2.6.0.tgz#f022195afdfc942e088ee2101285a1d31c7d727f"
+  integrity sha1-8CIZWv38lC4IjuIQEoWh0xx9cn8=
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.1"
@@ -813,15 +823,27 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@vant/icons@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.3.2.tgz#f0930010e7aaa9b06b03636fe9b5bc6477ea224b"
-  integrity sha1-8JMAEOeqqbBrA2Nv6bW8ZHfqIks=
+"@vant/icons@^1.4.0":
+  version "1.5.0"
+  resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.5.0.tgz#ce78a2f055a1a4099129bb6c44d54584f3740e27"
+  integrity sha1-znii8FWhpAmRKbtsRNVFhPN0Dic=
 
-"@vant/use@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.npm.taobao.org/@vant/use/download/@vant/use-0.0.9.tgz#938b41e8dd682f063450f45699111ab30dd279c1"
-  integrity sha1-k4tB6N1oLwY0UPRWmREasw3SecE=
+"@vant/lazyload@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/@vant/lazyload/download/@vant/lazyload-1.0.2.tgz#1ca486bee2b9465ae005a88014bee873a647f763"
+  integrity sha1-HKSGvuK5RlrgBaiAFL7oc6ZH92M=
+
+"@vant/popperjs@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/@vant/popperjs/download/@vant/popperjs-1.0.2.tgz#522d71656235125a3ae08e9c701a3bae6fd88d7b"
+  integrity sha1-Ui1xZWI1Elo64I6ccBo7rm/YjXs=
+  dependencies:
+    "@popperjs/core" "^2.5.4"
+
+"@vant/use@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.npm.taobao.org/@vant/use/download/@vant/use-0.1.0.tgz#7d2020aa7e5ab92d57dea46cb24dd9013c7eacee"
+  integrity sha1-fSAgqn5auS1X3qRssk3ZATx+rO4=
 
 "@vue/cli-overlay@^4.5.6":
   version "4.5.6"
@@ -983,14 +1005,14 @@
     estree-walker "^2.0.1"
     source-map "^0.6.1"
 
-"@vue/compiler-core@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.npm.taobao.org/@vue/compiler-core/download/@vue/compiler-core-3.0.2.tgz#7790b7a1fcbba5ace4d81a70ce59096fa5c95734"
-  integrity sha1-d5C3ofy7pazk2BpwzlkJb6XJVzQ=
+"@vue/compiler-core@3.0.4":
+  version "3.0.4"
+  resolved "https://registry.npm.taobao.org/@vue/compiler-core/download/@vue/compiler-core-3.0.4.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fcompiler-core%2Fdownload%2F%40vue%2Fcompiler-core-3.0.4.tgz#0122aca6eada4cb28b39ed930af917444755e330"
+  integrity sha1-ASKspuraTLKLOe2TCvkXREdV4zA=
   dependencies:
     "@babel/parser" "^7.12.0"
     "@babel/types" "^7.12.0"
-    "@vue/shared" "3.0.2"
+    "@vue/shared" "3.0.4"
     estree-walker "^2.0.1"
     source-map "^0.6.1"
 
@@ -1002,13 +1024,13 @@
     "@vue/compiler-core" "3.0.0-rc.13"
     "@vue/shared" "3.0.0-rc.13"
 
-"@vue/compiler-dom@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.npm.taobao.org/@vue/compiler-dom/download/@vue/compiler-dom-3.0.2.tgz#1d40de04bcdf9aabb79fb6a802dd70a2f3c2992a"
-  integrity sha1-HUDeBLzfmqu3n7aoAt1wovPCmSo=
+"@vue/compiler-dom@3.0.4":
+  version "3.0.4"
+  resolved "https://registry.npm.taobao.org/@vue/compiler-dom/download/@vue/compiler-dom-3.0.4.tgz#834fd4b15c5698cf9f4505c2bfbccca058a843eb"
+  integrity sha1-g0/UsVxWmM+fRQXCv7zMoFioQ+s=
   dependencies:
-    "@vue/compiler-core" "3.0.2"
-    "@vue/shared" "3.0.2"
+    "@vue/compiler-core" "3.0.4"
+    "@vue/shared" "3.0.4"
 
 "@vue/compiler-sfc@^3.0.0-0":
   version "3.0.0-rc.13"
@@ -1075,28 +1097,28 @@
   resolved "https://registry.npm.taobao.org/@vue/preload-webpack-plugin/download/@vue/preload-webpack-plugin-1.1.2.tgz?cache=0&sync_timestamp=1595814818644&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fpreload-webpack-plugin%2Fdownload%2F%40vue%2Fpreload-webpack-plugin-1.1.2.tgz#ceb924b4ecb3b9c43871c7a429a02f8423e621ab"
   integrity sha1-zrkktOyzucQ4ccekKaAvhCPmIas=
 
-"@vue/reactivity@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.npm.taobao.org/@vue/reactivity/download/@vue/reactivity-3.0.2.tgz#42ed5af6025b494a5e69b05169fcddf04eebfe77"
-  integrity sha1-Qu1a9gJbSUpeabBRafzd8E7r/nc=
+"@vue/reactivity@3.0.4":
+  version "3.0.4"
+  resolved "https://registry.npm.taobao.org/@vue/reactivity/download/@vue/reactivity-3.0.4.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Freactivity%2Fdownload%2F%40vue%2Freactivity-3.0.4.tgz#b6599dd8271a745960a03f05744ccf7991ba5d8d"
+  integrity sha1-tlmd2CcadFlgoD8FdEzPeZG6XY0=
   dependencies:
-    "@vue/shared" "3.0.2"
+    "@vue/shared" "3.0.4"
 
-"@vue/runtime-core@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.npm.taobao.org/@vue/runtime-core/download/@vue/runtime-core-3.0.2.tgz#d7ed462af1cb0bf9836668e4e6fab3f2f4b1bc00"
-  integrity sha1-1+1GKvHLC/mDZmjk5vqz8vSxvAA=
+"@vue/runtime-core@3.0.4":
+  version "3.0.4"
+  resolved "https://registry.npm.taobao.org/@vue/runtime-core/download/@vue/runtime-core-3.0.4.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fruntime-core%2Fdownload%2F%40vue%2Fruntime-core-3.0.4.tgz#a5b9a001560b1fd8c01a43f68b764c555de7836c"
+  integrity sha1-pbmgAVYLH9jAGkP2i3ZMVV3ng2w=
   dependencies:
-    "@vue/reactivity" "3.0.2"
-    "@vue/shared" "3.0.2"
+    "@vue/reactivity" "3.0.4"
+    "@vue/shared" "3.0.4"
 
-"@vue/runtime-dom@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.npm.taobao.org/@vue/runtime-dom/download/@vue/runtime-dom-3.0.2.tgz#9d166d03225558025d3d80f5039b646e0051b71c"
-  integrity sha1-nRZtAyJVWAJdPYD1A5tkbgBRtxw=
+"@vue/runtime-dom@3.0.4":
+  version "3.0.4"
+  resolved "https://registry.npm.taobao.org/@vue/runtime-dom/download/@vue/runtime-dom-3.0.4.tgz#6f81aec545f24511d2c28a315aa3391420b69c68"
+  integrity sha1-b4GuxUXyRRHSwooxWqM5FCC2nGg=
   dependencies:
-    "@vue/runtime-core" "3.0.2"
-    "@vue/shared" "3.0.2"
+    "@vue/runtime-core" "3.0.4"
+    "@vue/shared" "3.0.4"
     csstype "^2.6.8"
 
 "@vue/shared@3.0.0-rc.13":
@@ -1104,10 +1126,10 @@
   resolved "https://registry.npm.taobao.org/@vue/shared/download/@vue/shared-3.0.0-rc.13.tgz#2ec450daa7eae752da38da41a5b1c84056b10b7e"
   integrity sha1-LsRQ2qfq51LaONpBpbHIQFaxC34=
 
-"@vue/shared@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.npm.taobao.org/@vue/shared/download/@vue/shared-3.0.2.tgz#419bd85a2ebdbd4f42963e98c5a1b103452176d9"
-  integrity sha1-QZvYWi69vU9Clj6YxaGxA0Uhdtk=
+"@vue/shared@3.0.4":
+  version "3.0.4"
+  resolved "https://registry.npm.taobao.org/@vue/shared/download/@vue/shared-3.0.4.tgz#6dc50f593bdfdeaa6183d1dbc15e2d45e7c6b8b3"
+  integrity sha1-bcUPWTvf3qphg9HbwV4tRefGuLM=
 
 "@vue/test-utils@^2.0.0-0":
   version "2.0.0-beta.5"
@@ -3051,9 +3073,9 @@ cssstyle@^2.0.0:
     cssom "~0.3.6"
 
 csstype@^2.6.8:
-  version "2.6.13"
-  resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.13.tgz?cache=0&sync_timestamp=1598348227965&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-2.6.13.tgz#a6893015b90e84dd6e85d0e3b442a1e84f2dbe0f"
-  integrity sha1-pokwFbkOhN1uhdDjtEKh6E8tvg8=
+  version "2.6.14"
+  resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.14.tgz?cache=0&sync_timestamp=1605258528595&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-2.6.14.tgz#004822a4050345b55ad4dcc00be1d9cf2f4296de"
+  integrity sha1-AEgipAUDRbVa1NzAC+HZzy9Clt4=
 
 cyclist@^1.0.1:
   version "1.0.1"
@@ -9911,15 +9933,16 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vant@^3.0.0-beta.6:
-  version "3.0.0-beta.6"
-  resolved "https://registry.npm.taobao.org/vant/download/vant-3.0.0-beta.6.tgz?cache=0&sync_timestamp=1604287314521&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvant%2Fdownload%2Fvant-3.0.0-beta.6.tgz#d7589dc17b3f46b14bc468a76d3dfec9e9328472"
-  integrity sha1-11idwXs/RrFLxGinbT3+yekyhHI=
+vant@^3.0.0-rc.3:
+  version "3.0.0-rc.3"
+  resolved "https://registry.npm.taobao.org/vant/download/vant-3.0.0-rc.3.tgz#cc84a571183a184a8710fac5fd0aee1f42ab9d09"
+  integrity sha1-zISlcRg6GEqHEPrF/QruH0KrnQk=
   dependencies:
     "@babel/runtime" "7.x"
-    "@vant/icons" "1.3.2"
-    "@vant/use" "^0.0.9"
-    vue-lazyload "1.2.3"
+    "@vant/icons" "^1.4.0"
+    "@vant/lazyload" "^1.0.2"
+    "@vant/popperjs" "^1.0.2"
+    "@vant/use" "^0.1.0"
 
 vary@~1.1.2:
   version "1.1.2"
@@ -10004,11 +10027,6 @@ vue-jest@^5.0.0-0:
     extract-from-css "^0.4.4"
     ts-jest "^24.0.0"
 
-vue-lazyload@1.2.3:
-  version "1.2.3"
-  resolved "https://registry.npm.taobao.org/vue-lazyload/download/vue-lazyload-1.2.3.tgz#901f9ec15c7e6ca78781a2bae4a343686bdedb2c"
-  integrity sha1-kB+ewVx+bKeHgaK65KNDaGve2yw=
-
 "vue-loader-v16@npm:vue-loader@^16.0.0-beta.7":
   version "16.0.0-beta.7"
   resolved "https://registry.npm.taobao.org/vue-loader/download/vue-loader-16.0.0-beta.7.tgz?cache=0&sync_timestamp=1599639207320&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-loader%2Fdownload%2Fvue-loader-16.0.0-beta.7.tgz#6f2726fa0e2b1fbae67895c47593bbf69f2b9ab8"
@@ -10032,10 +10050,10 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-router@^4.0.0-rc.1:
-  version "4.0.0-rc.1"
-  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-4.0.0-rc.1.tgz?cache=0&sync_timestamp=1603710629657&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-4.0.0-rc.1.tgz#42f41315849163a1243886c9aa6d7c14f24fd003"
-  integrity sha1-QvQTFYSRY6EkOIbJqm18FPJP0AM=
+vue-router@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-4.0.1.tgz?cache=0&sync_timestamp=1607347231238&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-4.0.1.tgz#309240e50524b1e7d4e82e27f0a0fa25fe3d1d71"
+  integrity sha1-MJJA5QUksefU6C4n8KD6Jf49HXE=
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"
@@ -10050,19 +10068,19 @@ vue-template-es2015-compiler@^1.6.0, vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.npm.taobao.org/vue/download/vue-3.0.2.tgz#9d5b7b2983f35e64a34d13c7c9d6831239feca3c"
-  integrity sha1-nVt7KYPzXmSjTRPHydaDEjn+yjw=
+vue@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.npm.taobao.org/vue/download/vue-3.0.4.tgz?cache=0&sync_timestamp=1606946160685&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-3.0.4.tgz#872c65c143f5717bd5387c61613d9f55f4cc0f43"
+  integrity sha1-hyxlwUP1cXvVOHxhYT2fVfTMD0M=
   dependencies:
-    "@vue/compiler-dom" "3.0.2"
-    "@vue/runtime-dom" "3.0.2"
-    "@vue/shared" "3.0.2"
+    "@vue/compiler-dom" "3.0.4"
+    "@vue/runtime-dom" "3.0.4"
+    "@vue/shared" "3.0.4"
 
-vuex@^4.0.0-rc.1:
-  version "4.0.0-rc.1"
-  resolved "https://registry.npm.taobao.org/vuex/download/vuex-4.0.0-rc.1.tgz?cache=0&sync_timestamp=1604065779556&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvuex%2Fdownload%2Fvuex-4.0.0-rc.1.tgz#160cd5957972a61c7c01ab585995b78e092a298d"
-  integrity sha1-FgzVlXlyphx8AatYWZW3jgkqKY0=
+vuex@^4.0.0-rc.2:
+  version "4.0.0-rc.2"
+  resolved "https://registry.npm.taobao.org/vuex/download/vuex-4.0.0-rc.2.tgz?cache=0&sync_timestamp=1606318199388&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvuex%2Fdownload%2Fvuex-4.0.0-rc.2.tgz#3681c84eb6f5171b039edaa17cc78105e20724f3"
+  integrity sha1-NoHITrb1FxsDntqhfMeBBeIHJPM=
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"
