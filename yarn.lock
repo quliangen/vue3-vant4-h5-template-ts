@@ -220,7 +220,7 @@
   resolved "https://registry.npm.taobao.org/@babel/types/download/@babel/types-7.12.11.tgz#a86e4d71e30a9b6ee102590446c98662589283ce"
   integrity sha1-qG5NceMKm27hAlkERsmGYliSg84=
   dependencies:
-    "@babel/helper-validator-identifier" "^7.12.11"
+    "@babel/helper-validator-identifier" "^7.12.11
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
@@ -844,6 +844,7 @@
   version "0.1.0"
   resolved "https://registry.npm.taobao.org/@vant/use/download/@vant/use-0.1.0.tgz#7d2020aa7e5ab92d57dea46cb24dd9013c7eacee"
   integrity sha1-fSAgqn5auS1X3qRssk3ZATx+rO4=
+
 
 "@vue/cli-overlay@^4.5.6":
   version "4.5.6"
