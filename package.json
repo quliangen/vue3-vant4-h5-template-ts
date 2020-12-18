@@ -2,6 +2,15 @@
   "name": "vue3-vant3-h5-template-ts",
   "version": "0.1.0",
   "private": true,
+  "description": "基于：vue3全家桶、vant3的h5模板项目",
+  "homepage":"https://quliangen.github.io/vue3-vant3-h5-template-ts/",
+  "keywords": [
+		"vue3",
+    "vant3",
+    "axios",
+    "pug",
+    "eslint + prettier"
+	],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
