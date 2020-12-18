@@ -1,6 +1,6 @@
 # vue3-vant3-h5-template-ts [![Build Status](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts.svg?branch=master)](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts)
 ### 预览地址(h5项目请自行f12)：https://quliangen.github.io/vue3-vant3-h5-template-ts/
-## 集成技术栈：
+## Features：
 1. vue3 + vue-router4 + vuex4
 2. vant-ui3(按需import组件)
 3. axios(0.20.0) + 封装示例 + devServer配置示例
@@ -12,10 +12,11 @@
 9. 页面demo：基于vant-demo/base 购物车及详情页
 
 
-## Feature:
-1. 集成：定制主题
-2. styleLint
-3. changLog
+## RoadMap:
+1. 集成：plop
+2. 集成：定制主题
+3. styleLint
+4. changLog
 
 ## 配置项目本地服务代理设置(⭐️⭐️⭐️)
 + 配置项目服务器：复制.env.development.local.demo文件并重命名为：.env.development.local，根据实际需要配置 VUE_APP_BASE_API，具体配置看.local文件内的注释说明， .local为本地文件已添加gitignore，此项必须配置否则yarn serve找不到配置文件
