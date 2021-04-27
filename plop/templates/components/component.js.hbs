@@ -1,17 +1,22 @@
 <template lang="pug">
 .hello
-  h1 {{ msg }}
+  h1 \{{ msg }}
   p
-    | Vue3 + Vant3 + Pug + ViewPort + TS
+    | Vue3 + Vant3 + Pug + ViewPort + TS + {{ test }}
     br
     a(href="https://cli.vuejs.org" target="_blank" rel="noopener") vue-cli documentation
 </template>
 
 <script lang="ts">
 export default {
+  name: '{{name}}',
   props: {
     msg: String,
   },
+  data() {
+    return {
+    }
+  }
 };
 </script>
 
