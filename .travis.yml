@@ -1,11 +1,10 @@
-
 language: node_js
 node_js:
-  - "node"
+  - 'node'
 
-cache: npm
+cache: yarn
 
-script: bash ./deploy.sh
+script: yarn build
 
 deploy:
 provider: pages
