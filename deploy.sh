@@ -20,5 +20,5 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f "https://${github_token}@github.com/quliangen/vue3-vant3-h5-template-ts.git" master:gh-pages
+git push -f "https://${github_token}@github.com/quliangen/vue3-vant3-h5-template-ts.git" main:gh-pages
 cd -
