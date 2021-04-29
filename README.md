@@ -10,13 +10,13 @@
 7. eslint + prettier （风格校验 + 一键修复）
 8. travis CI push代码自行构建gh-pages
 9. 页面demo：基于vant-demo/base 购物车及详情页
+10. 集成：[plop](https://plopjs.com/documentation/)
 
 
 ## RoadMap:
-1. 集成：plop
-2. 集成：定制主题
-3. styleLint
-4. changLog
+1. styleLint
+2. changLog
+3. 定制主题
 
 ## 配置项目本地服务代理设置(⭐️⭐️⭐️)
 + 配置项目服务器：复制.env.development.local.demo文件并重命名为：.env.development.local，根据实际需要配置 VUE_APP_BASE_API，具体配置看.local文件内的注释说明， .local为本地文件已添加gitignore，此项必须配置否则yarn serve找不到配置文件
