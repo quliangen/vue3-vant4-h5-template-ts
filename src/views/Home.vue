@@ -11,18 +11,8 @@
   HelloWorld(msg="Hello Vue3!")
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import { useCount } from '@/store/useState/count';
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld,
-  },
-  setup() {
-    return {
-      ...useCount(),
-    };
-  },
-};
+const { state, countAdd } = useCount();
 </script>

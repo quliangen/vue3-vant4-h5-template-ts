@@ -5,14 +5,15 @@
       img(:src="thumb")
   van-cell-group
     van-cell
-      .goods-title {{ goods.title }}
-      .goods-price {{ formatPrice() }}
+      template(#title)
+        .goods-title {{ goods.title }}
+        .goods-price {{ formatPrice() }}
     .goods-express
       van-col(span="10") 运费：{{ goods.express }}
       van-col(span="14") 剩余：{{ goods.remain }}
   van-cell-group.goods-cell-group
     van-cell(value="进入店铺" icon="shop-o" is-link @click="sorry")
-      template(v-slot="title")
+      template(#title)
         span.van-cell-text 有赞的店
         van-tag.goods-tag(type="danger") 官方
     van-cell(title="线下门店" icon="location-o" is-link @click="sorry")
