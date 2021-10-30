@@ -7,7 +7,7 @@ interface Count {
   countAdd: () => void;
 }
 // use
-export function count(): Count {
+export function useCount(): Count {
   const store = useStore();
   const state = store.state;
   const countAdd = () => {

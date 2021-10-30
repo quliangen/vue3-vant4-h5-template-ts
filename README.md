@@ -46,13 +46,23 @@ yarn test:unit
 yarn lint
 ```
 
+### Run plop create components
+```
+yarn plop:cmp
+```
+
+### Run plop create view
+```
+yarn plop:view
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 ## 模板项目正确使用姿势：
 
-> 说明：此方法适合中小团队，有多个相同技术栈子项目的开发场景。
+> 说明：此方法适合小微团队，有多个相同技术栈子项目的开发场景。
 
 > 目标：利用模板项目统一管理多个子项目技术栈。
 
@@ -60,7 +70,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 > 注意：此方法适用git共享仓，模板项目可向子项目merge，子项目不可pull到模板项目污染模板。
 
-> Tips: 说了这么多此方法其实就是手动版本的github fork。
+> Tips: 说了这么多此方法其实就是人肉手动版的github fork。
 
 具体步骤：
 1. 先行体验并查阅本项目技术栈是否适合贵司业务及技术栈
