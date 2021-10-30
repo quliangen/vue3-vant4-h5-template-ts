@@ -6,7 +6,7 @@
   van-cell-group
     van-cell
       .goods-title {{ goods.title }}
-      .goods-price {{ formatPrice(goods.price) }}
+      .goods-price {{ formatPrice() }}
     .goods-express
       van-col(span="10") 运费：{{ goods.express }}
       van-col(span="14") 剩余：{{ goods.remain }}
@@ -27,7 +27,7 @@
     van-action-bar-button(type="danger" @click="sorry") 立即购买
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -39,38 +39,27 @@ interface Goods {
   thumb: string[];
 }
 
-export default {
-  setup() {
-    const router = useRouter();
-    const goods = ref({} as Goods);
-    const formatPrice = () => {
-      return '¥' + (goods.value.price / 100).toFixed(2);
-    };
-    const onClickCart = () => {
-      router.push('Cart');
-    };
+const router = useRouter();
+const goods = ref({} as Goods);
+const formatPrice = () => {
+  return '¥' + (goods.value.price / 100).toFixed(2);
+};
+const onClickCart = () => {
+  router.push('Cart');
+};
 
-    const sorry = () => {
-      // $toast('暂无后续逻辑~');
-    };
-    goods.value = {
-      title: '美国伽力果（约680g/3个）',
-      price: 2680,
-      express: '免运费',
-      remain: 19,
-      thumb: [
-        'https://img.yzcdn.cn/public_files/2017/10/24/e5a5a02309a41f9f5def56684808d9ae.jpeg',
-        'https://img.yzcdn.cn/public_files/2017/10/24/1791ba14088f9c2be8c610d0a6cc0f93.jpeg',
-      ],
-    };
-
-    return {
-      goods,
-      formatPrice,
-      onClickCart,
-      sorry,
-    };
-  },
+const sorry = () => {
+  // $toast('暂无后续逻辑~');
+};
+goods.value = {
+  title: '美国伽力果（约680g/3个）',
+  price: 2680,
+  express: '免运费',
+  remain: 19,
+  thumb: [
+    'https://img.yzcdn.cn/public_files/2017/10/24/e5a5a02309a41f9f5def56684808d9ae.jpeg',
+    'https://img.yzcdn.cn/public_files/2017/10/24/1791ba14088f9c2be8c610d0a6cc0f93.jpeg',
+  ],
 };
 </script>
 

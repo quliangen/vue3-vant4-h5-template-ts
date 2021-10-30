@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-import { count } from '@/store/useState/count';
+import { useCount } from '@/store/useState/count';
 export default {
   name: 'Home',
   components: {
@@ -21,7 +21,7 @@ export default {
   },
   setup() {
     return {
-      ...count(),
+      ...useCount(),
     };
   },
 };

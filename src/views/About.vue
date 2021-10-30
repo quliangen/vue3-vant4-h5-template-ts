@@ -8,34 +8,24 @@
     span route 信息：看控制台
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { onMounted } from 'vue';
-import { count } from '@/store/useState/count';
+import { useCount } from '@/store/useState/count';
 import { useRoute } from 'vue-router';
 import { login } from '@/api/index';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const { state, countAdd } = useCount();
+const route = useRoute();
+console.log('Router with Composition API demo: ', route);
+// 详见文档：https://next.router.vuejs.org/guide/advanced/composition-api.html#accessing-the-router-and-current-route-inside-setup
 
-export default {
-  setup() {
-    const route = useRoute();
-    console.log('Router with Composition API demo: ', route);
-    // 详见文档：https://next.router.vuejs.org/guide/advanced/composition-api.html#accessing-the-router-and-current-route-inside-setup
-
-    onMounted(() => {
-      // axios请求demo：
-      login({
-        name: 'admin',
-        password: '123456',
-      })
-        .then()
-        .catch(error => {
-          console.log(error);
-        });
-    });
-    return {
-      ...count(),
-    };
-  },
-};
+onMounted(() => {
+  // axios请求demo：
+  login({
+    name: 'admin',
+    password: '123456',
+  }).then();
+});
 </script>
 
 <style scoped></style>
