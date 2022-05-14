@@ -11,6 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors":true, // 解决object遍历时默认 item为any
     "sourceMap": true,
+    "noUnusedLocals": true,
     "baseUrl": ".",
     "types": [
       "webpack-env",
