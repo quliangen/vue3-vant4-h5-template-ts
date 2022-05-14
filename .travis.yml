@@ -2,9 +2,9 @@ language: node_js
 node_js:
   - 'node'
 
-cache: yarn
+cache: pnpm
 
-script: yarn build
+script: pnpm build
 
 deploy:
 provider: pages

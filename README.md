@@ -19,41 +19,41 @@
 3. 定制主题
 
 ## 配置项目本地服务代理设置(⭐️⭐️⭐️)
-+ 配置项目服务器：复制.env.development.local.demo文件并重命名为：.env.development.local，根据实际需要配置 VUE_APP_BASE_API，具体配置看.local文件内的注释说明， .local为本地文件已添加gitignore，此项必须配置否则yarn serve找不到配置文件
++ 配置项目服务器：复制.env.development.local.demo文件并重命名为：.env.development.local，根据实际需要配置 VUE_APP_BASE_API，具体配置看.local文件内的注释说明， .local为本地文件已添加gitignore，此项必须配置否则pnpm serve找不到配置文件
 
 ## Project setup
 ```
-yarn
+pnpm i
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+pnpm serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+pnpm build
 ```
 
 ### Run your unit tests
 ```
-yarn test:unit
+pnpm test:unit
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+pnpm lint
 ```
 
 ### Run plop create components
 ```
-yarn plop:cmp
+pnpm plop:cmp
 ```
 
 ### Run plop create view
 ```
-yarn plop:view
+pnpm plop:view
 ```
 
 ### Customize configuration
