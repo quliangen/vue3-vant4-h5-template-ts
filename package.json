@@ -12,10 +12,10 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "pinia": "^2.0.14",
     "vant": "^3.4.9",
     "vue": "^3.2.36",
-    "vue-router": "^4.0.15",
-    "vuex": "^4.0.2"
+    "vue-router": "^4.0.15"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",

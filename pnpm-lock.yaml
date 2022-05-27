@@ -23,6 +23,7 @@ specifiers:
   less: ^3.0.4
   less-loader: ^5.0.0
   lint-staged: ^9.5.0
+  pinia: ^2.0.14
   plop: ^2.7.4
   postcss-px-to-viewport: ^1.1.1
   prettier: ^2.4.1
@@ -34,15 +35,14 @@ specifiers:
   vue-cli-plugin-pug: ~2.0.0
   vue-jest: ^5.0.0-0
   vue-router: ^4.0.15
-  vuex: ^4.0.2
   yorkie: ^2.0.0
 
 dependencies:
   axios: 0.24.0
+  pinia: 2.0.14_typescript@4.5.5+vue@3.2.36
   vant: 3.4.9_vue@3.2.36
   vue: 3.2.36
   vue-router: 4.0.15_vue@3.2.36
-  vuex: 4.0.2_vue@3.2.36
 
 devDependencies:
   '@types/jest': 24.9.1
@@ -7337,6 +7337,24 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /pinia/2.0.14_typescript@4.5.5+vue@3.2.36:
+    resolution: {integrity: sha512-0nPuZR4TetT/WcLN+feMSjWJku3SQU7dBbXC6uw+R6FLQJCsg+/0pzXyD82T1FmAYe0lsx+jnEDQ1BLgkRKlxA==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.1.4
+      typescript: 4.5.5
+      vue: 3.2.36
+      vue-demi: 0.12.5_vue@3.2.36
+    dev: false
+
   /pirates/4.0.5:
     resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==}
     engines: {node: '>= 6'}
@@ -9455,6 +9473,21 @@ packages:
       - webpack
     dev: true
 
+  /vue-demi/0.12.5_vue@3.2.36:
+    resolution: {integrity: sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: 3.2.36
+    dev: false
+
   /vue-eslint-parser/8.3.0_eslint@7.32.0:
     resolution: {integrity: sha512-dzHGG3+sYwSf6zFBa0Gi9ZDshD7+ad14DGOdTLjruRVgZXe2J+DcZ9iUhyR48z5g1PqRa20yt3Njna/veLJL/g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -9625,15 +9658,6 @@ packages:
       '@vue/runtime-dom': 3.2.36
       '@vue/server-renderer': 3.2.36_vue@3.2.36
       '@vue/shared': 3.2.36
-    dev: false
-
-  /vuex/4.0.2_vue@3.2.36:
-    resolution: {integrity: sha512-M6r8uxELjZIK8kTKDGgZTYX/ahzblnzC4isU1tpmEuOIIKmV+TRdc+H4s8ds2NuZ7wpUTdGRzJRtoj+lI+pc0Q==}
-    peerDependencies:
-      vue: ^3.0.2
-    dependencies:
-      '@vue/devtools-api': 6.1.4
-      vue: 3.2.36
     dev: false
 
   /w3c-hr-time/1.0.2:
