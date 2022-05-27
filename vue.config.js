@@ -1,4 +1,4 @@
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const tsImportPluginFactory = require('ts-import-plugin');
 const autoprefixer = require('autoprefixer');
 const pxtoviewport = require('postcss-px-to-viewport');
@@ -13,10 +13,6 @@ module.exports = {
   devServer: {
     port: port,
     open: true,
-    overlay: {
-      warnings: false,
-      errors: true,
-    },
     proxy: {
       // 三方mock服务 easyMock 或 Rap2
       '/mock-server': {
@@ -66,12 +62,14 @@ module.exports = {
   css: {
     loaderOptions: {
       postcss: {
-        plugins: [
-          autoprefixer(),
-          pxtoviewport({
-            viewportWidth: 375,
-          }),
-        ],
+        postcssOptions: {
+          plugins: [
+            autoprefixer(),
+            pxtoviewport({
+              viewportWidth: 375,
+            }),
+          ],
+        },
       },
     },
   },

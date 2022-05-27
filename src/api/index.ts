@@ -1,4 +1,4 @@
-import request from '@/plugins/request.ts';
+import request from '@/plugins/request';
 
 const APIS = {
   login: '/login',
