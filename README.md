@@ -1,7 +1,7 @@
 # vue3-vant3-h5-template-ts [![Build Status](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts.svg?branch=master)](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts)
 ### 预览地址(h5项目请自行f12)：https://quliangen.github.io/vue3-vant3-h5-template-ts/
 ## Features：
-1. vue3 + vue-router4 + vuex4
+1. vue3 + vue-router4 + pinia
 2. vant-ui3(按需import组件)
 3. axios(0.20.0) + 封装示例 + devServer配置示例
 4. pug
