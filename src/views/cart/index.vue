@@ -1,15 +1,15 @@
 <template lang="pug">
 div
-  van-checkbox-group.card-goods(v-model="checkedGoods")
-    van-checkbox.card-goods__item(v-for="item in goods" :key="item.id" :name="item.id")
-      van-card(
+  CheckboxGroup.card-goods(v-model="checkedGoods")
+    Checkbox.card-goods__item(v-for="item in goods" :key="item.id" :name="item.id")
+      Card(
         :title="item.title"
         :desc="item.desc"
         :num="item.num"
         :price="formatPrice(item.price)"
         :thumb="item.thumb"
       )
-  van-submit-bar(
+  SubmitBar(
     :price="totalPrice"
     :disabled="!checkedGoods.length"
     :button-text="submitBarText"
@@ -18,6 +18,7 @@ div
 </template>
 
 <script lang="ts" setup>
+import { Checkbox, CheckboxGroup, SubmitBar, Card } from 'vant';
 import { ref, computed } from 'vue';
 
 interface Goods {

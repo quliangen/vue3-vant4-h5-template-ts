@@ -3,12 +3,13 @@
   h1 This is an about page
   div
     span Pinia demo 来自Home的count
-    van-button(type="danger" size="mini" @click="countAdd") count++ {{ count }}
+    Button(type="danger" size="mini" @click="countAdd") count++ {{ count }}
   div
     span route 信息：看控制台
 </template>
 
 <script lang="ts" setup>
+import { Button } from 'vant';
 import { onMounted } from 'vue';
 import { useCount } from '@/stores/useCount';
 import { useRoute } from 'vue-router';
