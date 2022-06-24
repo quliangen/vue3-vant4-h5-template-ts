@@ -5,13 +5,18 @@
     | Vue3 + Pinia + Vant3 + Pug + ViewPort + TS
     br
     a(href="https://cli.vuejs.org" target="_blank" rel="noopener") vue-cli documentation
+    br
+    span 组件内部输入
+    input(type="text" :value="title" @input="$emit('update:title', $event.target?.value)")
 </template>
 
 <script lang="ts">
 export default {
   props: {
     msg: String,
+    title: String,
   },
+  emits: ['update:title'],
 };
 </script>
 
