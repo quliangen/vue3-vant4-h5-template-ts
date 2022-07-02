@@ -6,18 +6,17 @@
     br
     a(href="https://cli.vuejs.org" target="_blank" rel="noopener") vue-cli documentation
     br
-    span 组件内部输入
-    input(type="text" :value="title" @input="$emit('update:title', $event.target?.value)")
+    span 组件多 v-model title
+    input(type="text" :value="title" @input="emits('update:title', $event.target?.value)")
+    br
+    span 组件多 v-model name
+    input(type="text" :value="name" @input="emits('update:name', $event.target?.value)")
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    msg: String,
-    title: String,
-  },
-  emits: ['update:title'],
-};
+<script lang="ts" setup>
+import { defineProps, defineEmits } from 'vue';
+defineProps(['msg', 'title', 'name']);
+const emits = defineEmits(['update:title', 'update:name']);
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

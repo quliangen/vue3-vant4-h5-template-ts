@@ -12,9 +12,11 @@
   div
     span State demo
     Button(type="primary" size="mini" @click="addTest") 组件内部 state++ {{ test }}
-  HelloWorld(msg="Hello Vue3!" v-model:title="title")
+  HelloWorld(msg="Hello Vue3!" v-model:title="title" v-model:name="name")
   div 
     span 父组件 v-model:title 示例：{{ title }}
+  div
+    span 父组件 v-model:name 示例：{{ name }}
 </template>
 
 <script lang="ts" setup>
@@ -27,6 +29,7 @@ const { count, countAdd } = toRefs(useCount());
 const counter = useCount();
 const test = ref(0);
 const title = ref('');
+const name = ref('');
 
 const addTest = () => {
   test.value++;
