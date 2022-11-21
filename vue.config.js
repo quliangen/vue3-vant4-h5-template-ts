@@ -11,6 +11,7 @@ module.exports = {
   parallel: false, // 未配置可能导致build后vantUI 无样式
   lintOnSave: true,
   devServer: {
+    host: 'localhost',
     port: port,
     open: true,
     proxy: {
