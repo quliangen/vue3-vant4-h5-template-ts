@@ -4,6 +4,7 @@ module.exports = {
     node: true,
   },
   extends: [
+    './.eslintrc-auto-import.json',
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/typescript/recommended',
@@ -21,6 +22,7 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     'vue/multi-word-component-names': 'off',
+    'no-undef': 'off',
   },
   overrides: [
     {

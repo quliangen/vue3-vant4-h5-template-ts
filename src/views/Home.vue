@@ -1,7 +1,5 @@
 <script lang="ts" setup>
 import { Button } from 'vant';
-import { ref, toRefs } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import { useCount } from '@/stores/useCount';
 // tips: pinia 解构丢失响应性，可使用 toRefs包裹后解构。
 const { count, countAdd } = toRefs(useCount());

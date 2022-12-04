@@ -1,6 +1,7 @@
 const { merge } = require('webpack-merge');
 const { VantResolver } = require('unplugin-vue-components/resolvers');
-const ComponentsPlugin = require('unplugin-vue-components/webpack');
+const Components = require('unplugin-vue-components/webpack');
+const AutoImport = require('unplugin-auto-import/webpack');
 const autoprefixer = require('autoprefixer');
 const pxtoviewport = require('postcss-px-to-viewport');
 const projectSettings = require('./src/settings.js');
@@ -35,27 +36,21 @@ module.exports = {
     },
   },
   configureWebpack: {
-    // provide the app's title in webpack name field, so that
     name: name,
     plugins: [
-      ComponentsPlugin({
+      AutoImport({
+        dts: true,
+        imports: ['vue', 'vue-router', 'pinia'],
+        eslintrc: {
+          enabled: false,
+        },
+        resolvers: [VantResolver()],
+      }),
+      Components({
+        dirs: ['src/components'],
         resolvers: [VantResolver()],
       }),
     ],
-  },
-  chainWebpack: config => {
-    config.module
-      .rule('ts')
-      .use('ts-loader')
-      .tap(options => {
-        options = merge(options, {
-          transpileOnly: true,
-          compilerOptions: {
-            module: 'es2015',
-          },
-        });
-        return options;
-      });
   },
   css: {
     loaderOptions: {

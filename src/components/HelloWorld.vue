@@ -16,7 +16,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps, defineEmits } from 'vue';
 defineProps(['msg', 'title', 'name']);
 const emits = defineEmits(['update:title', 'update:name']);
 </script>
