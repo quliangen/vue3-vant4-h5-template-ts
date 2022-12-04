@@ -2,7 +2,7 @@
 .hello
   h1 {{ msg }}
   p
-    | Vue3 + Pinia + Vant3 + Pug + ViewPort + TS
+    | Vue3 + Pinia + Vant4 + Pug + ViewPort + TS
     br
     a(href="https://cli.vuejs.org" target="_blank" rel="noopener") vue-cli documentation
     br

@@ -1,5 +1,6 @@
 const { merge } = require('webpack-merge');
-const tsImportPluginFactory = require('ts-import-plugin');
+const { VantResolver } = require('unplugin-vue-components/resolvers');
+const ComponentsPlugin = require('unplugin-vue-components/webpack');
 const autoprefixer = require('autoprefixer');
 const pxtoviewport = require('postcss-px-to-viewport');
 const projectSettings = require('./src/settings.js');
@@ -36,6 +37,11 @@ module.exports = {
   configureWebpack: {
     // provide the app's title in webpack name field, so that
     name: name,
+    plugins: [
+      ComponentsPlugin({
+        resolvers: [VantResolver()],
+      }),
+    ],
   },
   chainWebpack: config => {
     config.module
@@ -44,15 +50,6 @@ module.exports = {
       .tap(options => {
         options = merge(options, {
           transpileOnly: true,
-          getCustomTransformers: () => ({
-            before: [
-              tsImportPluginFactory({
-                libraryName: 'vant',
-                libraryDirectory: 'es',
-                style: true,
-              }),
-            ],
-          }),
           compilerOptions: {
             module: 'es2015',
           },

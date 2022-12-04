@@ -13,9 +13,10 @@
   "dependencies": {
     "axios": "^0.24.0",
     "pinia": "^2.0.14",
-    "vant": "^3.4.9",
+    "vant": "^4.0.2",
     "vue": "^3.2.36",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.15",
+    "vue3-vant3-h5-template-ts": "link:"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
@@ -43,9 +44,9 @@
     "plop": "^2.7.4",
     "postcss-px-to-viewport": "^1.1.1",
     "prettier": "^2.4.1",
-    "ts-import-plugin": "^1.6.6",
     "ts-jest": "^27.0.4",
     "typescript": "~4.5.5",
+    "unplugin-vue-components": "^0.22.11",
     "vue-cli-plugin-pug": "~2.0.0",
     "vue-jest": "^5.0.0-0",
     "yorkie": "^2.0.0"

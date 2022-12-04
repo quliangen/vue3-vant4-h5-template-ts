@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Toast, Dialog } from 'vant';
+import { showToast, showLoadingToast, showSuccessToast, closeToast, showConfirmDialog } from 'vant';
 const projectSettings = require('@/settings.js');
 
 // 创建axios实例
@@ -12,7 +12,7 @@ const instance = axios.create({
 // Add a request interceptor
 instance.interceptors.request.use(
   config => {
-    Toast.loading({
+    showLoadingToast({
       message: '加载中...',
       duration: 0,
       forbidClick: true, //禁止背景点击
@@ -31,7 +31,7 @@ instance.interceptors.request.use(
 instance.interceptors.response.use(
   response => {
     // 关闭loading
-    Toast.clear();
+    closeToast();
     // Any status code that lie within the range of 2xx cause this function to trigger
     // Do something with response data
     const res = response.data;
@@ -39,7 +39,7 @@ instance.interceptors.response.use(
     if (res.code === 200 && res.sysCode === 0) {
       if (res.msg) {
         // api操作提示，建议后台给msg值，前端弹出即可。
-        Toast.success({
+        showSuccessToast({
           message: res.msg,
           duration: 3 * 1000,
         });
@@ -48,7 +48,7 @@ instance.interceptors.response.use(
     } else {
       // 非200状态码 弹出非空业务异常提示信息：errorMsg
       if (res.errorMsg) {
-        Toast({
+        showToast({
           message: res.errorMsg,
           duration: 5 * 1000,
         });
@@ -58,10 +58,10 @@ instance.interceptors.response.use(
   },
   error => {
     // 关闭loading
-    Toast.clear();
+    closeToast();
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
-    Dialog.confirm({
+    showConfirmDialog({
       title: '提示',
       message: '服务器异常' + (error.message.indexOf('timeout') > -1 ? '请求超时' : '抱歉服务器忙！请稍后重试！'),
       confirmButtonText: '我知道了',
