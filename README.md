@@ -1,16 +1,15 @@
-# vue3-vant3-h5-template-ts [![Build Status](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts.svg?branch=master)](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts)
+# vue3-vant4-h5-template-ts [![Build Status](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts.svg?branch=master)](https://travis-ci.org/quliangen/vue3-vant3-h5-template-ts)
 ### 预览地址(h5项目请自行f12)：https://quliangen.github.io/vue3-vant3-h5-template-ts/
 ## Features：
 1. vue3 + vue-router4 + pinia
-2. vant-ui3(按需import组件)
+2. vant-ui4(按需import组件)
 3. axios(0.20.0) + 封装示例 + devServer配置示例
-4. pug
-5. less
-6. h5 px 2 viewPort
-7. eslint + prettier （风格校验 + 一键修复）
-8. travis CI push代码自行构建gh-pages
-9. 页面demo：基于vant-demo/base 购物车及详情页
-10. 集成：[plop](https://plopjs.com/documentation/)
+4. less
+5. h5 px 2 viewPort
+6. eslint + prettier （风格校验 + 一键修复）
+7. travis CI push代码自行构建gh-pages
+8. 页面demo：基于vant-demo/base 购物车及详情页(已删除)
+9. 集成：[plop](https://plopjs.com/documentation/)
 
 
 ## RoadMap:

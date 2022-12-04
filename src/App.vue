@@ -1,10 +1,9 @@
-<template lang="pug">
-#nav
-  router-link(to="/goods") Goods |
-  router-link(to="/cart") Cart |
-  router-link(to="/") Home |
-  router-link(to="/about/12345") About |
-  router-view
+<template>
+  <section id="nav">
+    <router-link to="/"> Home |</router-link>
+    <router-link to="/about/12345"> About </router-link>
+    <router-view />
+  </section>
 </template>
 
 <style lang="less">
