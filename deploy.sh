@@ -23,6 +23,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:quliangen/quliangen.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:quliangen/vue3-vant3-h5-template-ts.git master:gh-pages
-# git push -f "https://${github_token}@github.com/quliangen/vue3-vant3-h5-template-ts.git" master:gh-pages
+git push -f git@github.com:quliangen/vue3-vant4-h5-template-ts.git master:gh-pages
+# git push -f "https://${github_token}@github.com/quliangen/vue3-vant4-h5-template-ts.git" master:gh-pages
 cd -

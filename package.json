@@ -1,5 +1,5 @@
 {
-  "name": "vue3-vant3-h5-template-ts",
+  "name": "vue3-vant4-h5-template-ts",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,8 +15,7 @@
     "pinia": "^2.0.14",
     "vant": "^4.0.2",
     "vue": "^3.2.36",
-    "vue-router": "^4.0.15",
-    "vue3-vant3-h5-template-ts": "link:"
+    "vue-router": "^4.0.15"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",

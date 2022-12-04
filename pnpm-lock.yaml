@@ -35,7 +35,6 @@ specifiers:
   vue: ^3.2.36
   vue-jest: ^5.0.0-0
   vue-router: ^4.0.15
-  vue3-vant3-h5-template-ts: 'link:'
   yorkie: ^2.0.0
 
 dependencies:
@@ -44,7 +43,6 @@ dependencies:
   vant: 4.0.2_vue@3.2.36
   vue: 3.2.36
   vue-router: 4.0.15_vue@3.2.36
-  vue3-vant3-h5-template-ts: 'link:'
 
 devDependencies:
   '@types/jest': 24.9.1
