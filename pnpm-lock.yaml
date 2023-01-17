@@ -26,7 +26,7 @@ specifiers:
   lint-staged: ^9.5.0
   pinia: ^2.0.14
   plop: ^2.7.4
-  postcss-px-to-viewport: ^1.1.1
+  postcss-px-to-viewport-8-plugin: ^1.1.5
   prettier: ^2.4.1
   ts-jest: ^27.0.4
   typescript: ~4.5.5
@@ -69,7 +69,7 @@ devDependencies:
   less-loader: 5.0.0_less@3.13.1
   lint-staged: 9.5.0
   plop: 2.7.6
-  postcss-px-to-viewport: 1.1.1
+  postcss-px-to-viewport-8-plugin: 1.1.5
   prettier: 2.6.2
   ts-jest: 27.1.5_y52uoo3slcnxorjm3nqedsh7oa
   typescript: 4.5.5
@@ -7713,11 +7713,10 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-px-to-viewport/1.1.1:
-    resolution: {integrity: sha512-2x9oGnBms+e0cYtBJOZdlwrFg/mLR4P1g2IFu7jYKvnqnH/HLhoKyareW2Q/x4sg0BgklHlP1qeWo2oCyPm8FQ==}
+  /postcss-px-to-viewport-8-plugin/1.1.5:
+    resolution: {integrity: sha512-qM6x2NyGbRj8R15o/LCbw5hacU+XK1s80zTvWgLjHsOP8B9P1KbDZbNS11BG6/WPut8LR8DvEU5iKw8JnQn9MQ==}
     dependencies:
       object-assign: 4.1.1
-      postcss: 8.4.14
     dev: true
 
   /postcss-reduce-initial/5.1.0_postcss@8.4.14:
